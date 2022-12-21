@@ -1,0 +1,5 @@
+0. This website
+1. Business-card raytracer
+2. Self-replicating program
+   http://users.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf
+3. 

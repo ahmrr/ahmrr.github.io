@@ -1,0 +1,6 @@
+- page: home
+  url: /
+- page: about
+  url: /about
+- page: blog
+  url: /blog

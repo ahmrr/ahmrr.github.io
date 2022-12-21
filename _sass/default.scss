@@ -1,0 +1,79 @@
+$apricot: hsla(21, 100%, 85%, 1);
+$melon: hsla(12, 100%, 82%, 1);
+$pastel-pink: hsla(358, 60%, 75%, 1);
+$english-lavender: hsla(348, 25%, 61%, 1);
+$old-lavender: hsl(263, 6%, 43%);
+
+@font-face {
+    font-family: "Cambria";
+    src: url("/assets/fonts/cambria.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+    background: $apricot;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:not(pre, pre *) {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    color: $old-lavender;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cambria", serif;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+
+    & ~ h2 {
+        margin: 0 auto;
+    }
+}
+
+ul {
+    list-style: none;
+
+    & > li:not(nav li) {
+        margin: 20px auto 0;
+    }
+}
+
+main {
+    width: calc(min(calc(100% - 40px), 728px));
+    margin: 0 auto;
+    padding: 0 20px 20px;
+
+    & > * {
+        margin: 20px auto 0;
+    }
+}
+
+a:not(nav a) {
+    color: darkblue;
+    transition: 0.1s ease;
+
+    &:active {
+        color: darkmagenta;
+    }
+}
+
+::selection {
+    background: $pastel-pink;
+}
