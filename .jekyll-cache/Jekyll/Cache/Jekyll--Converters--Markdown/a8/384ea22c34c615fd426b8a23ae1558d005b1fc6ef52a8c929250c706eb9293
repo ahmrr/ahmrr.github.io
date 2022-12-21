@@ -1,0 +1,15 @@
+I"É<h1>ahmer raza</h1>
+
+<h2>just another cs student</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+    <span class="kd">const</span> <span class="nx">ahmer</span> <span class="o">=</span>
+        <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">obtain</span> <span class="o">=&gt;</span> <span class="nx">setTimeout</span><span class="p">(</span>
+        <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">obtain</span><span class="p">(</span><span class="dl">"</span><span class="s2">bachelors</span><span class="dl">"</span><span class="p">),</span> <span class="mi">63113904000</span><span class="p">));</span>
+    
+    <span class="nx">degree</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ahmer</span><span class="p">();</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Learn more about me or visit my weblog. Contact me at <a href="mailto:ahhmerrr.dev@gmail.com">ahhmerrr.dev@gmail.com</a> or <a href="tel:8645081948">(864)-508-1948</a>.</p>
+:ET

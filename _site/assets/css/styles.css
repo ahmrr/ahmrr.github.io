@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap");
+@font-face { font-family: "Cambria"; src: url("/assets/fonts/cambria.ttf") format("truetype"); }
+
+:root { background: #ffcdb3; }
+
+* { margin: 0; padding: 0; }
+
+*:not(pre, pre *) { font-family: "Roboto Mono", monospace; font-size: 18px; font-weight: 400; color: #6c6774; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Cambria", serif; font-weight: 600; text-align: center; user-select: none; }
+
+h1 { font-size: 2.5rem; }
+
+h1 ~ h2 { margin: 0 auto; }
+
+ul { list-style: none; }
+
+ul > li:not(nav li) { margin: 20px auto 0; }
+
+main { width: calc(min(calc(100% - 40px), 728px)); margin: 0 auto; padding: 0 20px 20px; }
+
+main > * { margin: 20px auto 0; }
+
+a:not(nav a) { color: darkblue; transition: 0.1s ease; }
+
+a:not(nav a):active { color: darkmagenta; }
+
+::selection { background: #e6999c; }
+
+.highlight { background-color: #272822; border-radius: 5px; padding: 5px; font-size: 1rem; }
+
+.highlight .hll { background-color: #49483e; }
+
+.highlight .c { color: #a8a38d; }
+
+.highlight .err { color: #960050; background-color: #1e0010; }
+
+.highlight .k { color: #66d9ef; }
+
+.highlight .l { color: #ae81ff; }
+
+.highlight .n { color: #f8f8f2; }
+
+.highlight .o { color: #f92672; }
+
+.highlight .p { color: #f8f8f2; }
+
+.highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs { color: #a8a38d; }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .kc, .highlight .kd { color: #66d9ef; }
+
+.highlight .kn { color: #f92672; }
+
+.highlight .kp, .highlight .kr, .highlight .kt { color: #66d9ef; }
+
+.highlight .ld { color: #e6db74; }
+
+.highlight .m { color: #ae81ff; }
+
+.highlight .s { color: #e6db74; }
+
+.highlight .na { color: #a6e22e; }
+
+.highlight .nb { color: #f8f8f2; }
+
+.highlight .nc { color: #a6e22e; }
+
+.highlight .no { color: #66d9ef; }
+
+.highlight .nd { color: #a6e22e; }
+
+.highlight .ni { color: #f8f8f2; }
+
+.highlight .ne, .highlight .nf { color: #a6e22e; }
+
+.highlight .nl, .highlight .nn { color: #f8f8f2; }
+
+.highlight .nx { color: #a6e22e; }
+
+.highlight .py { color: #f8f8f2; }
+
+.highlight .nt { color: #f92672; }
+
+.highlight .nv { color: #f8f8f2; }
+
+.highlight .ow { color: #f92672; }
+
+.highlight .w { color: #f8f8f2; }
+
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo { color: #ae81ff; }
+
+.highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2 { color: #e6db74; }
+
+.highlight .se { color: #ae81ff; }
+
+.highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #e6db74; }
+
+.highlight .bp, .highlight .vc, .highlight .vg, .highlight .vi { color: #f8f8f2; }
+
+.highlight .il { color: #ae81ff; }
+
+.highlight .gu { color: #75715e; }
+
+.highlight .gd { color: #f92672; }
+
+.highlight .gi { color: #a6e22e; }
+
+code, pre { background-color: "#282C34"; color: whitesmoke; }
+
+code, code span { font-family: monospace; font-weight: 400; font-size: 16px; }
+
+code { background-color: "#282C34"; color: whitesmoke; }
+
+code::selection, code *::selection { background: #6c6774; color: whitesmoke; }
+
+code:not(pre code) { background-color: #272822; border-radius: 5px; padding: 3.5px; }
+
+pre { background-color: "#282C34"; color: whitesmoke; filter: drop-shadow(0 0 15px #282c34); }
+
+nav { width: 100%; background: #ffb6a3; filter: drop-shadow(0 0 15px #e6999c); }
+
+nav ul { display: flex; justify-content: space-around; align-items: center; height: 100%; }
+
+nav ul li { padding: 1rem; }
+
+nav ul li a { text-decoration: none; font-size: 1.5rem; font-family: "Cambria", serif; font-weight: 600; color: #6c6774; user-select: none; }
+
+.active { background: #e6999c; filter: drop-shadow(0 0 15px #e6999c); }
+
+main { position: relative; }
+
+main > article { margin: 0; }
+
+main > article > * { margin: 20px auto 0; }
+
+main > article figure { width: 100%; text-align: center; }
+
+main > article ol, main > article ul { list-style-position: inside; padding: 0 20px; }
+
+main > article ol > li, main > article ul > li { margin: 20px auto 0; }
+
+.links { position: absolute; top: 0; left: 20px; margin: 0; }
+
+.links * { margin: 0; }
+
+/*# sourceMappingURL=styles.css.map */
