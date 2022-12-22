@@ -27,6 +27,15 @@ a:not(nav a):active { color: darkmagenta; }
 
 ::selection { background: #e6999c; }
 
+/* width */
+::-webkit-scrollbar { width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Handle */
+::-webkit-scrollbar-thumb { background: #6c6774; }
+
 .highlight { background-color: #272822; border-radius: 5px; padding: 5px; font-size: 1rem; }
 
 .highlight .hll { background-color: #49483e; }
@@ -131,7 +140,7 @@ nav ul li a { text-decoration: none; font-size: 1.5rem; font-family: "Cambria", 
 
 .active { background: #e6999c; filter: drop-shadow(0 0 15px #e6999c); }
 
-main { position: relative; }
+main > header { position: relative; }
 
 main > article { margin: 0; }
 
@@ -143,7 +152,7 @@ main > article ol, main > article ul { list-style-position: inside; padding: 0 2
 
 main > article ol > li, main > article ul > li { margin: 20px auto 0; }
 
-.links { position: absolute; top: 0; left: 20px; margin: 0; }
+.links { height: 100%; display: flex; align-items: center; position: absolute; top: 0; left: 0; margin: 0; }
 
 .links * { margin: 0; }
 

@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ahmer Raza</title>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
-    </head>
-    <body>
-        <nav>
-    <ul>
-        
-        <li >
-            <a href="/">
-                home
-            </a>
-        </li>
-        
-        <li >
-            <a href="/about">
-                about
-            </a>
-        </li>
-        
-        <li >
-            <a href="/blog">
-                blog
-            </a>
-        </li>
-        
-    </ul>
-</nav>
-
-
-        <main>
-            <header>
-                <div class="links">
-                    
-                    <a href="http://localhost:4000/0">link</a>
-                    
-                </div>
-                <h1>this blog</h1>
-            </header>
-            <article><p>So. Somehow or the other, you’re reading this. You may be interested, bored, or just nosy. Either way, I’m glad you’re here. This is the start of an era for me, and I hope you’ll stick around till the end.</p>
+I"�<p>So. Somehow or the other, you’re reading this. You may be interested, bored, or just nosy. Either way, I’m glad you’re here. This is the start of an era for me, and I hope you’ll stick around till the end.</p>
 
 <p>You may be wondering why I made this in the first place. There are a couple of reasons:</p>
 
@@ -64,7 +20,4 @@ College is the only place I actually work on CS projects, but it can get monoton
 <p>Finally, I wanted an easy way to use multiple permalinks for my posts. For example, I wanted to be able to use the relative URLs <code class="language-plaintext highlighter-rouge">/0</code> and <code class="language-plaintext highlighter-rouge">/posts/this</code> to access this post, so I decided to use a plugin called <a href="https://github.com/jekyll/jekyll-redirect-from">jekyll-redirect-from</a> to set up redirects for my pages. It’s working seamlessly, and I’m relieved I didn’t have to use <code class="language-plaintext highlighter-rouge">.htaccess</code> files to get the results I wanted (though Liquid would’ve made that easy as well).</p>
 
 <p>Anyway, that’s this post. I hope you grow to enjoy this blog as much as I hope I will. I’ll be posting here every once in a while, so stay tuned!</p>
-</article>
-        </main>
-    </body>
-</html>
+:ET

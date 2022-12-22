@@ -14,14 +14,14 @@
         {% include nav.html %}
         <main>
             <header>
+                <div class="links">
+                    {% for link in page.redirect_from %}
+                    <a href="{{ link | prepend: site.url  }}">link</a>
+                    {% endfor %}
+                </div>
                 <h1>{{ page.title }}</h1>
             </header>
             <article>{{ content }}</article>
-            <div class="links">
-                {% for link in page.redirect_from %}
-                <a href="{{ link | prepend: site.url  }}">alternate link</a>
-                {% endfor %}
-            </div>
         </main>
     </body>
 </html>

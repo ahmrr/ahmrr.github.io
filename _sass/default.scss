@@ -77,3 +77,18 @@ a:not(nav a) {
 ::selection {
     background: $pastel-pink;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $old-lavender;
+}

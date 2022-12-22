@@ -1,5 +1,7 @@
 main {
-    position: relative;
+    & > header {
+        position: relative;
+    }
 
     & > article {
         margin: 0;
@@ -26,9 +28,12 @@ main {
 }
 
 .links {
+    height: 100%;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
     margin: 0;
 
     & * {
