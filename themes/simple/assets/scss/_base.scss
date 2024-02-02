@@ -1,0 +1,144 @@
+@import "vars";
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font: 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, avenir next,
+        avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial,
+        sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: $edge $edge 0;
+    background: $chalk;
+    color: $slate;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    user-select: none;
+}
+
+header {
+    line-height: 2;
+    margin-bottom: $edge / 2;
+    & h1 {
+        font-size: xx-large;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        & li {
+            padding-left: 1rem;
+            display: inline;
+            & a {
+                font-size: large;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    width: calc(100% - $edge);
+    margin: 0 0 -$edge;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: auto;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+time {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+blockquote {
+    border-left: 0.25rem solid $storm;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+pre {
+    padding: 0.5rem;
+    overflow: auto;
+    overflow-wrap: normal;
+}
+
+ul {
+    list-style-type: square;
+    &,
+    ol {
+        padding-left: 1.2rem;
+    }
+}
+
+hr {
+    margin: auto 0.5rem;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid $storm;
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+code:not(.highlight *) {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+div.highlight {
+    // filter: drop-shadow(0 0 10px #282c34);
+    // -webkit-filter: drop-shadow(0 0 10px #282c34);
+    overflow-x: auto;
+    overflow-y: auto;
+    margin: 1rem 0;
+    width: 100%;
+    & > div {
+        border-radius: 2px;
+        width: 100%;
+    }
+}

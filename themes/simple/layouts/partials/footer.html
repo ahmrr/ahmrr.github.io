@@ -1,0 +1,24 @@
+<footer>
+    {{/* {{ if .IsHome }} */}}
+    <div class="media__panel">
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:ahhmerrr.dev@gmail.com"
+            class="media__button"
+        >
+            {{ partial "svg.html" "envelope" }}
+        </a>
+        &bull;
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/ahmrr"
+            class="media__button"
+        >
+            {{ partial "svg.html" "github" }}
+        </a>
+    </div>
+    {{/* {{ end }} */}}
+    <p>&copy; Ahmer Raza {{ now.Year }}</p>
+</footer>

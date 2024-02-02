@@ -1,0 +1,72 @@
+baseURL: "https://ahmrr.github.io"
+languageCode: en-us
+paginate: 3
+theme: simple
+title: Ahmer Raza
+enableRobotsTXT: true
+sitemap:
+    changeFreq: "monthly"
+    filename: sitemap.xml
+    priority: 0.5
+permalinks:
+    pages: "/:slug"
+params:
+    author: Ahmer Raza
+    dateFormat: 01 Jan 2000
+    description: >-
+        I'm Ahmer, a fourth-year student at Clemson University. Come see what I've
+        been up to!
+    logo: /assets/favicon.png
+    comments:
+        githubRepo: ahmrr/ahmrr.github.io
+        theme: github-light
+menu:
+    main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: -110
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: -200
+markup:
+    goldmark:
+        parser:
+            autoHeadingID: false
+        renderer:
+            unsafe: true
+    highlight:
+        anchorLineNos: false
+        codeFences: true
+        guessSyntax: false
+        hl_Lines: ""
+        hl_inline: false
+        lineAnchors: ""
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        noClasses: true
+        noHl: false
+        style: monokai
+        tabWidth: 4
+taxonomies:
+    tag: tags
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+    section:
+        - HTML
+outputFormats:
+    RSS:
+        baseName: atom
+        mediatype: application/rss
+    JSON:
+        baseName: feed
+        mediatype: application/json
+        ignoreErrors:
+            - error-remote-getjson
+blackfriday:
+    plainIdAnchors: true

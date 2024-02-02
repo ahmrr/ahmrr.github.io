@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section id="content">
+    <h1>
+        {{ .Title }} {{ if eq .Page.RelPermalink "/posts/" }} &bull;
+        <a href="/tags">Tags</a> {{ else if eq .Page.RelPermalink "/tags/" }}
+        &bull; <a href="/posts">Posts</a>
+        {{ end }}
+    </h1>
+    {{ .Content }}
+</section>
+<section id="list">
+    <ul reversed class="posts__list">
+        {{ if eq .Pages.Len 0 }} I haven't posted anything yet! {{ else }} {{
+        range .Pages }}
+        <li>
+            <a class="link" href="{{ .Permalink }}" title="{{ .Title }}"
+                >{{ .Title }}
+            </a>
+            <hr />
+            <em>
+                <time datetime="{{ dateFormat "02/01/2006" .Date }}">{{ dateFormat "02/01/2006" .Date }}</time>
+            </em>
+        </li>
+        {{ end }} {{ end }}
+    </ul>
+</section>
+{{ end }}

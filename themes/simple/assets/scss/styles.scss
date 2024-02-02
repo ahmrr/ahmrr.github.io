@@ -1,0 +1,127 @@
+@import "base";
+
+.util {
+    &__p-0 {
+        padding: 0;
+    }
+    &__m-0 {
+        margin: 0;
+    }
+    &__flex {
+        display: flex;
+    }
+    &__flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img {
+    &__inline {
+        display: inline-block;
+
+        height: 20px;
+        width: 20px;
+
+        color: $chalk;
+    }
+    &__profile {
+        display: inline;
+        float: right;
+
+        width: 150px;
+        height: 150px;
+
+        margin: 16px;
+        border-radius: 50%;
+    }
+}
+
+.media {
+    &__panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        user-select: none;
+    }
+    &__button {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
+
+        border-radius: 50%;
+        background: $deepblue;
+
+        cursor: pointer;
+        transition: ease 0.2s;
+
+        &:hover {
+            transform: rotate(360deg);
+            border-radius: 50%;
+        }
+    }
+}
+
+.link {
+    &__skip {
+        position: absolute;
+        top: -40px;
+        left: 0;
+
+        background: transparent;
+        z-index: 999;
+        &:focus {
+            top: 0;
+        }
+    }
+}
+
+.posts {
+    &__list {
+        line-height: 2;
+        list-style-type: none;
+        padding-left: 0;
+        & li {
+            padding-bottom: 0.1rem;
+            display: flex;
+            align-items: baseline;
+        }
+    }
+}
+
+.header {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-size: xx-large;
+    }
+}
+
+@keyframes progress {
+}
+
+.progress {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        user-select: none;
+    }
+    &__element {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section id="content">{{ .Content }}</section>
+{{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
+<section id="list">
+    <h1>Latest</h1>
+    <ul reversed class="posts__list">
+        {{ range (first 3 (where .Site.RegularPages "Section" "posts"
+        ).ByDate.Reverse) }}
+        <li>
+            <a class="link" href="{{ .Permalink }}" title="{{ .Title }}"
+                >{{ .Title }}
+            </a>
+            <hr />
+            <em
+                ><time datetime="{{ dateFormat "02/01/2006" .Date }}"
+                    >{{ dateFormat "02/01/2006" .Date }}</time
+                ></em
+            >
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</section>
+{{ end }}
