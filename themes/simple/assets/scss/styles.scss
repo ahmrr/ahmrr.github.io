@@ -17,6 +17,20 @@
     }
 }
 
+.container {
+    &__profile {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 64px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+}
+
+// 600px
+
 .img {
     &__inline {
         display: inline-block;
@@ -27,14 +41,19 @@
         color: $chalk;
     }
     &__profile {
-        display: inline;
-        float: right;
+        display: flex;
+        // float: left;
 
-        width: 150px;
-        height: 150px;
+        max-width: 256px;
+        flex-shrink: 1;
+        // height: 150px;
 
-        margin: 16px;
-        border-radius: 50%;
+        border: 2px solid $slate;
+        border-radius: 8px;
+        @media (max-width: $mobile) {
+            margin: 0 auto;
+            flex-direction: column;
+        }
     }
 }
 
@@ -99,6 +118,9 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
     }
     &__title {
         font-size: xx-large;
@@ -125,3 +147,69 @@
         width: 0;
     }
 }
+
+#led {
+    width: 128px;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    margin: auto;
+}
+
+#led::before {
+    content: url("/svg/lightbulb.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    // height: 100%;
+    // animation: ledBefore 1s infinite;
+    opacity: 1;
+}
+
+#led::after {
+    content: url("/svg/lit-lightbulb.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    // height: 100%;
+    // animation: ledAfter 1s infinite;
+    opacity: 0;
+}
+
+#led:hover {
+    cursor: pointer;
+}
+
+#led:hover::before {
+    opacity: 0;
+}
+
+#led:hover::after {
+    opacity: 1;
+}
+
+// @keyframes ledBefore {
+//     0%,
+//     49% {
+//         opacity: 0;
+//     }
+
+//     50%,
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes ledAfter {
+//     0%,
+//     49% {
+//         opacity: 1;
+//     }
+
+//     50%,
+//     100% {
+//         opacity: 0;
+//     }
+// }

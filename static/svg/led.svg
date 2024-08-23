@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="128px" height="128px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <g id="color">
+    <path stroke="none" d="M31.3882,26.7177c0,0,9.2367-1.8188,8.4221-9.1964c-1.3538-12.261-1.4678-10.4237-1.4678-10.4237 l-5.5293,1.0104C32.8133,8.1081,35.9998,21.7018,31.3882,26.7177z" style="fill: rgb(227, 245, 254);"/>
+    <path stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M34.5417,7.0359c-8.1462,0-14.75,7.496-14.75,16.7427v16.388h29.5" style="fill: rgb(227, 245, 254);"/>
+    <rect x="26.8333" y="44.5" width="4" height="22.095" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" fill="#d0cfce"/>
+    <rect x="41.3333" y="44.5" width="4" height="16.4792" fill="#d0cfce" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path stroke="none" d="M34.5417,7.5625c0,0,15.3232,0.5495,15.9047,13.875c0.9664,22.1458,0.0665,18.9191,0.0665,18.9191 l-9.3254-0.19C41.1875,40.1667,42.6247,15.125,34.5417,7.5625z" style="fill: rgb(204, 235, 255);"/>
+    <rect x="43.3333" y="40.7917" width="11.8333" height="3.0833" stroke="none" style="fill: rgb(206, 236, 255);"/>
+    <rect x="16.3353" y="40.7917" width="26.998" height="3.0833" stroke="none" style="fill: rgb(227, 245, 254);"/>
+    <!-- <line x1="28.833" y1="66.595" x2="0" y2="66.595" stroke="black" /> -->
+  </g>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M 35.153 7.036 C 27.007 7.036 19.792 14.532 19.792 23.779 L 19.792 40.167 L 49.292 40.167"/>
+    <rect x="26.8333" y="44.5" width="4" height="22.095" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect x="41.3333" y="44.5" width="4" height="16.4792" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M25.8125,19.0625"/>
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M 34.883 7.036 C 43.029 7.036 50 14.532 50 23.779 L 50 39.731"/>
+    <polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" points="16,44.5 45.5309,44.5 45.9063,44.5 56,44.5 56,40.1667 45.9063,40.1667 45.4999,40.1667 16,40.1667"/>
+  </g>
+</svg>

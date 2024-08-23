@@ -1,5 +1,12 @@
 {{ define "main" }}
-<section id="content">{{ .Content }}</section>
+<div class="container__profile">
+    <img src="/img/picture.jpg" class="img__profile" alt="Picture of Ahmer" />
+    <section id="content">{{ .Content }}</section>
+</div>
+<span onclick="location.href = '/about';" id="led" ></span>
+<!-- <video width="100%" height="auto" controls autoplay>
+    <source src="{{- (resources.Get "vid/RobotVideo.mp4").RelPermalink -}}" type="video/mp4">
+</video> -->
 {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
 <section id="list">
     <h1>Latest</h1>

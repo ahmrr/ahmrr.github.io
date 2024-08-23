@@ -7,16 +7,16 @@ enableRobotsTXT: true
 sitemap:
     changeFreq: "monthly"
     filename: sitemap.xml
-    priority: 0.5
+    priority: 0.25
 permalinks:
     pages: "/:slug"
 params:
     author: Ahmer Raza
     dateFormat: 01 Jan 2000
     description: >-
-        I'm Ahmer, a fourth-year student at Clemson University. Come see what I've
+        I'm Ahmer, a student at Clemson University. Come see what I've
         been up to!
-    logo: /assets/favicon.png
+    logo: /assets/favicon.svg
     comments:
         githubRepo: ahmrr/ahmrr.github.io
         theme: github-light
@@ -25,7 +25,11 @@ menu:
         - identifier: about
           name: About
           url: /about/
-          weight: -110
+          weight: -100
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: -200
         - identifier: posts
           name: Posts
           url: /posts/
