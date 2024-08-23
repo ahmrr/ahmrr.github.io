@@ -3,7 +3,6 @@
     <img src="/img/picture.jpg" class="img__profile" alt="Picture of Ahmer" />
     <section id="content">{{ .Content }}</section>
 </div>
-<span onclick="location.href = '/about';" id="led" ></span>
 {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
 <section id="list">
     <h1>Latest</h1>

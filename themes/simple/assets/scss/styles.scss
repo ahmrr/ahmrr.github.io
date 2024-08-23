@@ -23,13 +23,18 @@
         flex-direction: row;
         gap: 32px;
         margin-bottom: 64px;
-        @media (max-width: $mobile) {
+        @media (max-width: $bigmobile) {
             flex-direction: column;
         }
     }
+    // & > :not(.img__profile) {
+    //     display: flex;
+    //     @media (max-width: $bigmobile) {
+    //         flex-grow: 1;
+    //         flex-shrink: 0;
+    //     }
+    // }
 }
-
-// 600px
 
 .img {
     &__inline {
@@ -42,17 +47,25 @@
     }
     &__profile {
         display: flex;
+        align-self: flex-start;
         // float: left;
 
+        min-width: 0px;
         max-width: 256px;
+        // flex-grow: 0;
+        width: auto;
+        height: auto;
         flex-shrink: 1;
         // height: 150px;
 
-        border: 2px solid $slate;
+        // border: 2px solid $slate;
         border-radius: 8px;
-        @media (max-width: $mobile) {
+        @media (max-width: $bigmobile) {
             margin: 0 auto;
-            flex-direction: column;
+            // flex-basis: 0px;
+            // flex-grow: 0;
+            // flex-shrink: 1;
+            // align-self: auto;
         }
     }
 }
@@ -150,10 +163,11 @@
 
 #led {
     width: 128px;
+    height: 128px;
     position: relative;
     overflow: visible;
     display: flex;
-    margin: auto;
+    margin: 16px auto;
 }
 
 #led::before {
