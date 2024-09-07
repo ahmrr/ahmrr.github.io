@@ -10,6 +10,8 @@ During my undergraduate studies, I conducted Honors thesis research in Cybersecu
 
 In Spring 2024, I also (as part of a team) led development of a robot that won 1st place among 50+ universities in the [IEEE SoutheastCon 2024 Hardware Competition](https://blogs.clemson.edu/electrical-and-computer-engineering/clemsons-ieee-robotics-team-wins-2024-southeastcon-hardware-competition)! My work on this robot has taught me a lot about microcontrollers, and has allowed me to apply circuit design skills I learned prior.
 
+Aside from my current automotive security research, I am undertaking a Master's degree in Math at Clemson, which I expect to finish in August 2025. As part of the degree, I am conducting research at the intersection of statistics and differential privacy, co-advised by Dr. [Rafael G. L. D'Oliveira](https://sites.google.com/view/rafaeld) and Dr. [Christopher McMahan](https://mcmaha2.people.clemson.edu/).
+
 After graduating from college at the age of 16, I have learned that the sky truly is the limit if I have curiosity and discipline. I am indebted to my father for schooling, mentoring, and helping me throughout this amazing journey! I can't wait to see where life takes me.
 
 ```bash
