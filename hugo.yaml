@@ -14,7 +14,7 @@ params:
     author: Ahmer Raza
     dateFormat: 01 Jan 2000
     description: >-
-        I'm Ahmer, a 16-year-old recent Computer Science BS graduate at Clemson University. Currently, I am undertaking an MS in Math here at Clemson. Come see what else I've been up to!
+        I'm Ahmer, a 16-year-old recent Computer Science BS graduate at Clemson University. I am currently undertaking an MS in Math here at Clemson. Come see what else I've been up to!
     logo: /assets/favicon.svg
     comments:
         githubRepo: ahmrr/ahmrr.github.io
