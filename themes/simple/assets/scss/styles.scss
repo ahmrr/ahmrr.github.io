@@ -23,7 +23,7 @@
         flex-direction: row;
         gap: 32px;
         margin-bottom: 64px;
-        @media (max-width: $bigmobile) {
+        @media (max-width: $laptop) {
             flex-direction: column;
         }
     }
@@ -40,8 +40,8 @@
     &__inline {
         display: inline-block;
 
-        height: 20px;
-        width: 20px;
+        height: 28px;
+        width: 28px;
 
         color: $chalk;
     }
@@ -60,7 +60,8 @@
 
         // border: 2px solid $slate;
         border-radius: 8px;
-        @media (max-width: $bigmobile) {
+        // $bigmobile
+        @media (max-width: $laptop) {
             margin: 0 auto;
             // flex-basis: 0px;
             // flex-grow: 0;
@@ -83,7 +84,7 @@
         display: flex;
         width: fit-content;
         height: fit-content;
-        padding: 8px;
+        padding: 10px;
 
         border-radius: 50%;
         background: $deepblue;
@@ -129,14 +130,15 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        gap: 32px;
         align-items: center;
         margin-bottom: 16px;
-        @media (max-width: $mobile) {
+        @media (max-width: $bigtablet) {
             flex-direction: column;
         }
     }
     &__title {
-        font-size: xx-large;
+        font-size: xxx-large;
     }
 }
 
@@ -167,7 +169,8 @@
     position: relative;
     overflow: visible;
     display: flex;
-    margin: 16px auto;
+    margin: 64px auto;
+    scale: 1.5;
 }
 
 #led::before {
