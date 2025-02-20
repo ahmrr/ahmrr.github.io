@@ -25,10 +25,10 @@ menu:
           name: About
           url: /about/
           weight: -100
-        - identifier: projects
-          name: Projects
-          url: /projects/
-          weight: -200
+        # - identifier: projects
+        #   name: Projects
+        #   url: /projects/
+        #   weight: -200
         - identifier: posts
           name: Posts
           url: /posts/

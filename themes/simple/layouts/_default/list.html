@@ -1,10 +1,12 @@
 {{ define "main" }}
 <section id="content">
     <h1>
-        {{ .Title }} {{ if eq .Page.RelPermalink "/posts/" }} &bull;
+        {{ .Title }}
+        
+        {{/*  {{ if eq .Page.RelPermalink "/posts/" }} &bull;
         <a href="/tags">Tags</a> {{ else if eq .Page.RelPermalink "/tags/" }}
-        &bull; <a href="/posts">Posts</a>
-        {{ end }}
+        &bull; Sort by <a class="link" href="/posts">Posts</a>
+        {{ end }}  */}}
     </h1>
     {{ .Content }}
 </section>
@@ -17,9 +19,9 @@
                 >{{ .Title }}
             </a>
             <hr />
-            <em>
-                <time datetime="{{ dateFormat "02/01/2006" .Date }}">{{ dateFormat "02/01/2006" .Date }}</time>
-            </em>
+            <time datetime="{{ dateFormat "01/02/2006" .Date }}">
+                <p class="text">{{ dateFormat "01/02/2006" .Date }}</p>
+            </time>
         </li>
         {{ end }} {{ end }}
     </ul>

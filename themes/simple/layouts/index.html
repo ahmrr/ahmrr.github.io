@@ -3,7 +3,8 @@
     <img src="/img/picture.jpg" class="img__profile" alt="Picture of Ahmer" />
     <section id="content">{{ .Content }}</section>
 </div>
-{{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
+
+{{/*  {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
 <section id="list">
     <h1>Latest</h1>
     <ul reversed class="posts__list">
@@ -14,14 +15,12 @@
                 >{{ .Title }}
             </a>
             <hr />
-            <em
-                ><time datetime="{{ dateFormat "02/01/2006" .Date }}"
-                    >{{ dateFormat "02/01/2006" .Date }}</time
-                ></em
+            <time datetime="{{ dateFormat "01/02/2006" .Date }}"
+                ><p class="text">{{ dateFormat "01/02/2006" .Date }}</p></time
             >
         </li>
         {{ end }}
     </ul>
     {{ end }}
-</section>
+</section>  */}}
 {{ end }}
