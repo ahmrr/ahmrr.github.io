@@ -1,0 +1,25 @@
+---
+import ProjectCard from '@components/ProjectCard.astro'
+import Typescript from '@assets/icons/typescript.astro';
+import React from '@assets/icons/react.astro';
+import Supabase from '@assets/icons/supabase.astro';
+import Tailwind from '@assets/icons/tailwind.astro';
+---
+
+<section class="my-20">
+  <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
+  <hr class="mb-6 border-zinc-600">
+
+  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
+    <React />
+    <Supabase />
+    <Tailwind />
+    <Typescript />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
+    <React />
+    <Supabase />
+    <Tailwind />
+  </ProjectCard>
+</section>
