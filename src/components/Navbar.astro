@@ -1,17 +1,24 @@
 ---
-import Github from "@assets/icons/github.astro"
-import Email from "@assets/icons/email.astro"
-import ContainerHover from "@components/ContainerHover.astro"
+import Github from "@assets/icons/github.astro";
+import Linkedin from "@assets/icons/linkedin.astro";
+import Email from "@assets/icons/email.astro";
+import Latex from "@components/Latex.astro";
+import ContainerHover from "@components/ContainerHover.astro";
+import ThemeButton from "./ThemeButton.astro";
 ---
 
 <nav class="w-full flex justify-between items-center">
-  <span class="text-xl">@username</span>
-  <div class="flex gap-3 items-center">
-    <ContainerHover link="mailto:ejemplo@gmail.com">
-      <Email />
-    </ContainerHover>
-    <ContainerHover link="https://github.com/ejemplo">
-      <Github />
-    </ContainerHover>
-  </div>
+    <a href="/" class="text-3xl"><Latex formula="\\alpha\\zeta" /></a>
+    <div class="flex gap-3 items-center">
+        <ContainerHover link="mailto:araza@clemson.edu">
+            <Email />
+        </ContainerHover>
+        <ContainerHover link="https://linkedin.com/in/ahmer-raza-8b1982312">
+            <Linkedin />
+        </ContainerHover>
+        <ContainerHover link="https://github.com/ahmrr">
+            <Github />
+        </ContainerHover>
+        <ThemeButton />
+    </div>
 </nav>
