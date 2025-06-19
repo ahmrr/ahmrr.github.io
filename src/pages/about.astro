@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@components/Navbar.astro";
+import FinalSection from "@components/sections/FinalSection.astro";
+import FullAboutSection from "@components/sections/about/FullAboutSection.astro";
+---
+
+<Layout title="Ahmer Raza">
+    <div
+        class="min-w-[535px] max-w-screen-md mx-auto py-16 px-8 dark:selection:bg-gray-600 dark:selection:text-white"
+    >
+        <header>
+            <Navbar />
+        </header>
+        <main>
+            <FullAboutSection />
+        </main>
+        <footer>
+            <FinalSection />
+        </footer>
+    </div>
+</Layout>

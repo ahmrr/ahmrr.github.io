@@ -1,11 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/Navbar.astro";
-import ProfileSection from "@components/section/ProfileSection.astro";
-import AboutSection from "@components/section/AboutSection.astro";
-import ProjectsSection from "@components/section/ProjectsSection.astro";
-import SkillsSection from "@components/section/SkillsSection.astro";
-import FinalSection from "@components/section/FinalSection.astro";
+import ProfileSection from "@components/sections/index/ProfileSection.astro";
+import AboutSection from "@components/sections/index/AboutSection.astro";
+import FeaturedProjectsSection from "@components/sections/index/FeaturedProjectsSection.astro";
+import SkillsSection from "@components/sections/index/SkillsSection.astro";
+import FinalSection from "@components/sections/FinalSection.astro";
 ---
 
 <Layout title="Ahmer Raza">
@@ -18,7 +18,7 @@ import FinalSection from "@components/section/FinalSection.astro";
         </header>
         <main>
             <AboutSection />
-            <ProjectsSection />
+            <FeaturedProjectsSection />
             <!-- <SkillsSection /> -->
         </main>
         <footer>

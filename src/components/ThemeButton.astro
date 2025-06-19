@@ -1,23 +1,21 @@
 <button
     id="theme-toggle"
-    class="relative w-10 h-5 ml-2 rounded-full border transition-colors duration-300
-         bg-white border-zinc-900 dark:bg-zinc-900 dark:border-white"
+    class="relative w-10 h-5 rounded-full border-[1px] transition-colors duration-300 bg-white border-zinc-900 dark:bg-zinc-900 dark:border-white"
     aria-label="Toggle dark mode"
 >
     <div
-        class="absolute top-[2px] left-[2px] w-3.5 h-3.5 rounded-full bg-zinc-900 dark:bg-white
-           circle-transition"
+        class="absolute top-[2px] left-[2px] w-3.5 h-3.5 rounded-full bg-zinc-900 dark:bg-white transition-slide"
     >
     </div>
 </button>
 
 <style>
-    .circle-transition {
+    .transition-slide {
         transform: translateX(0);
-        transition: transform 0.25s ease;
+        transition: transform 0.1s ease;
     }
 
-    html.dark .circle-transition {
+    html.dark .transition-slide {
         transform: translateX(20px);
     }
 </style>

@@ -1,0 +1,36 @@
+---
+import ProjectCard from "@components/ProjectCard.astro";
+import ConstructionLine from "@components/ConstructionLine.astro";
+import Latex from "@components/Latex.astro";
+---
+
+<section class="my-20">
+    <h2 class="text-2xl font-semibold mb-2">Featured Projects</h2>
+    <hr class="mb-6 border-zinc-600" />
+
+    <ProjectCard
+        projectTitle="Private and Efficient Surveillance using Sample Pooling"
+        projectDescription="Sample pooling is cost-effective, statistically efficient, and private, all for free!™"
+        projectLink=""
+        image="/images/privacy_optimality.min.png"
+    >
+        <!-- We characterize the inherent differential privacy guarantees of sample
+        pooling; counterintuitively, sample pooling can simultaneously provide
+        better estimation efficiency and privacy than conventional unpooled
+        testing. We also discuss ways to optimally achieve a specific privacy
+        level. -->
+    </ProjectCard>
+
+    <ProjectCard
+        projectTitle="Large-Scale Hawkes Process Modeling of Social Media Data"
+        projectDescription="Hawkes processes are flexible, interpretable, and can capture sophisticated interactions, but severely suffer from scaling."
+        projectLink=""
+        image="/images/event_data_1.min.png"
+    >
+        <!-- With the goal of fitting a multivariate Hawkes model to a dataset with
+        ~217M events and ~85K event types, we look at novel optimizations to
+        large-scale Hawkes processes that enable drastic speedups. We also
+        provide a feature-rich, open-source, optimized PyTorch Hawkes process
+        library. -->
+    </ProjectCard>
+</section>
