@@ -1,6 +1,35 @@
-<div class="flex flex-col items-center justify-center mt-20 mb-16">
+---
+import Github from "@assets/icons/github.astro";
+import Linkedin from "@assets/icons/linkedin.astro";
+import Email from "@assets/icons/email.astro";
+import ContainerHover from "@components/ContainerHover.astro";
+---
+
+<div class="flex flex-col items-center justify-center mt-12">
     <h1 class="text-4xl font-bold block">Ahmer Raza</h1>
     <p class="text-2xl text-zinc-600 dark:text-zinc-400">
-        <em>Student Researcher</em>
+        <em>Graduate Researcher</em>
     </p>
+    <div class="flex flex-row gap-2 items-center">
+        <a
+            href="/CV.pdf"
+            target="_blank"
+            class="underline text-zinc-900 dark:text-zinc-100 font-medium text-xl px-2"
+        >
+            <!-- <Latex formula="\\mathrm{CV}" /> -->
+            CV
+        </a>
+        <!-- <span class="pointer-events-none select-none">&bull;</span> -->
+        <ContainerHover link="mailto:araza@clemson.edu">
+            <Email />
+        </ContainerHover>
+        <!-- <span class="pointer-events-none select-none">&bull;</span> -->
+        <ContainerHover link="https://linkedin.com/in/ahmer-raza-8b1982312">
+            <Linkedin />
+        </ContainerHover>
+        <!-- <span class="pointer-events-none select-none">&bull;</span> -->
+        <ContainerHover link="https://github.com/ahmrr">
+            <Github />
+        </ContainerHover>
+    </div>
 </div>

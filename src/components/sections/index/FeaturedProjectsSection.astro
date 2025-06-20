@@ -1,7 +1,7 @@
 ---
 import ProjectCard from "@components/ProjectCard.astro";
 import ConstructionLine from "@components/ConstructionLine.astro";
-import Latex from "@components/Latex.astro";
+import Latex from "@components/mini/Latex.astro";
 ---
 
 <section class="my-20">
@@ -10,27 +10,15 @@ import Latex from "@components/Latex.astro";
 
     <ProjectCard
         projectTitle="Private and Efficient Surveillance using Sample Pooling"
-        projectDescription="Sample pooling is cost-effective, statistically efficient, and private, all for free!™"
+        projectDescription="Sample pooling is simultaneously cost-effective, statistically efficient, and private! We explore the privacy-utility tradeoffs of sample pooling and uncover surprising results about its privacy guarantees and estimation efficiency. We introduce a theoretical framework for designing optimal experiments, which has many practical applications in real-world disease surveillance."
         projectLink=""
         image="/images/privacy_optimality.min.png"
-    >
-        <!-- We characterize the inherent differential privacy guarantees of sample
-        pooling; counterintuitively, sample pooling can simultaneously provide
-        better estimation efficiency and privacy than conventional unpooled
-        testing. We also discuss ways to optimally achieve a specific privacy
-        level. -->
-    </ProjectCard>
+    />
 
     <ProjectCard
         projectTitle="Large-Scale Hawkes Process Modeling of Social Media Data"
-        projectDescription="Hawkes processes are flexible, interpretable, and can capture sophisticated interactions, but severely suffer from scaling."
+        projectDescription="Hawkes processes are flexible, interpretable, and can capture sophisticated interactions, but severely suffer from scaling. We look at novel theoretical and practical optimizations that enable fitting a multivariate Hawkes process model on massive and rich social media data. We also provide a feature-rich, open-source, optimized Hawkes process library."
         projectLink=""
         image="/images/event_data_1.min.png"
-    >
-        <!-- With the goal of fitting a multivariate Hawkes model to a dataset with
-        ~217M events and ~85K event types, we look at novel optimizations to
-        large-scale Hawkes processes that enable drastic speedups. We also
-        provide a feature-rich, open-source, optimized PyTorch Hawkes process
-        library. -->
-    </ProjectCard>
+    />
 </section>

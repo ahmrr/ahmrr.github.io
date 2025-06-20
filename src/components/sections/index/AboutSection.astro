@@ -1,24 +1,47 @@
-<section class="my-20">
+---
+import Link from "@components/mini/Link.astro";
+---
+
+<section class="my-12">
     <h2 class="text-2xl font-semibold mb-1">About</h2>
     <hr class="mb-4 border-zinc-600" />
     <p
         class="leading-8 text-lg text-pretty mb-3 text-zinc-600 dark:text-zinc-400"
     >
-        Hi! I'm <strong class="text-zinc-900 dark:text-zinc-100 font-medium"
+        <!-- I'm <strong class="text-zinc-900 dark:text-zinc-100 font-medium"
             >Ahmer Raza</strong
         >, a Computer Science B.S. graduate and current Math M.S. student at <a
             href="https://www.clemson.edu/"
             class="underline text-zinc-900 dark:text-zinc-100 font-medium"
             >Clemson University</a
+        >. -->
+
+        I am a current M.S. student in Mathematics at Clemson University,
+        conducting research under <Link
+            url="https://mcmaha2.people.clemson.edu/">Dr. Chris McMahan</Link
+        > and <Link url="https://www.rafaeldoliveira.com/"
+            >Dr. Rafael D'Oliveira</Link
+        > at the intersection of differential privacy and statistics. I also work
+        on large-scale statistical modeling under <Link
+            url="https://dhudsmith.github.io/">Dr. Hudson Smith</Link
         >.
     </p>
     <p
         class="leading-8 text-lg text-pretty mb-3 text-zinc-600 dark:text-zinc-400"
     >
-        View my CV above and my socials at the bottom of the page for more info
-        about me.
+        I received my B.S. in Computer Science with Honors from Clemson, where I
+        conducted undergraduate research in side-channel attacks and hardware
+        cybersecurity under <Link url="https://zhenkai-zhang.github.io/"
+            >Dr. Zhenkai Zhang</Link
+        >.
     </p>
     <p class="leading-8 text-lg text-pretty text-zinc-600 dark:text-zinc-400">
-        Check out some of my notable projects below!
+        I’m broadly interested in information theory, differential privacy,
+        cryptography, and data science, and am most excited by opportunities to
+        apply them in highly interdisciplinary contexts.
     </p>
+    <!-- <p class="leading-8 text-lg text-pretty text-zinc-600 dark:text-zinc-400">
+        View my CV above and my socials at the bottom of the page for more info
+        about me.
+    </p> -->
 </section>

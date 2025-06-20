@@ -1,26 +1,25 @@
 ---
-import Latex from "@components/Latex.astro";
+import Latex from "@components/mini/Latex.astro";
 import ThemeButton from "./ThemeButton.astro";
 ---
 
 <nav class="w-full flex justify-between items-center">
     <div class="flex gap-8 items-center">
-        <a href="/" class="text-3xl"><Latex formula="\\alpha\\chi" /></a>
-        <a href="/about" class="text-xl text-zinc-600 dark:text-zinc-400"
+        <a href="/" class="text-4xl"><Latex formula="\\alpha\\chi" /></a>
+        <!-- <a href="/about" class="text-xl text-zinc-600 dark:text-zinc-400"
             >About</a
         >
         <a href="/projects" class="text-xl text-zinc-600 dark:text-zinc-400"
             >Projects</a
-        >
+        > -->
     </div>
     <div class="flex gap-8 items-center">
-        <a
+        <!-- <a
             href="/pdf/CV_Ahmer_Raza.pdf"
             class="underline text-zinc-900 dark:text-zinc-100 font-medium text-xl"
         >
-            <!-- <Latex formula="\\mathrm{CV}" /> -->
             CV
-        </a>
+        </a> -->
         <ThemeButton />
     </div>
 </nav>
