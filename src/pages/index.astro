@@ -6,9 +6,27 @@ import AboutSection from "@components/sections/index/AboutSection.astro";
 import FeaturedProjectsSection from "@components/sections/index/FeaturedProjectsSection.astro";
 import SkillsSection from "@components/sections/index/SkillsSection.astro";
 import FinalSection from "@components/sections/FinalSection.astro";
+import { SEO } from "astro-seo";
 ---
 
-<Layout title="Ahmer Raza">
+<!-- openGraph={
+    {
+        basic: {
+            title: "Ahmer Raza",
+            type: "website",
+            image: "TODO",
+        },
+        image: {
+            alt: "Preview of Ahmer Raza's site",
+        },
+    }
+} -->
+<Layout>
+    <SEO
+        slot="head"
+        title="Ahmer Raza"
+        description="I'm Ahmer, a current Math M.S. student at Clemson University working under Dr. Chris McMahan, Dr. Rafael D'Oliveira, and Dr. Hudson Smith."
+    />
     <div
         class="min-w-[535px] max-w-screen-md mx-auto py-16 px-8 dark:selection:bg-gray-600 dark:selection:text-white"
     >
